@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Задание №5</title>
+    <meta name="viewport" content="width=divice-width,initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1">
+</head>
+
+<body>
+
+    <div class="row justify-content-center" id="fon">
+        <div class="col-md-9 px-sm-3">
+            <header id="fon">
+                <div id="foni">
+                    <img id="logo" src="YWj_Q845Nz8.jpg">
+                    <h1>Nikol Gortez</h1>
+                </div>
+            </header>
+        </div>
+        <nav class="nav container"> <a href="#link">Список </a> <a href="#form">Форма</a> <a href="#table">Таблица</a>
+
+        </nav>
+
+        <div class="flex-box container" id="link">
+            <h2 id="head2">Ссылки</h2>
+            <section class="link">
+                <ol class="link__list">
+                    <li class="link__menu__item"><a href="http://ru.wikipedia.org/?r=5">Абсолютная гиперссылка на
+                            главную
+                            страницу сайта</a></li>
+                    <li class="link__menu__item"><a href="https://ru.wikipedia.org/?r=5">Абсолютная на главную сайта
+                            в
+                            протоколе https</a></li>
+                    <li><a href="ftp://public.ftp-servers.example.com/mydirectory/myfile.txt">ссылку на файл на
+                            сервере FTP
+                            без авторизации</a></li>
+                    <li class="link__menu__item"><a href="ftp://user:228@2ch.hk/files.file.html">Ссылку на файл на
+                            сервере
+                            FTP с авторизацией</a></li>
+                    <li class="link__menu__item"><a href="http://2ch.hk#anchor">Ссылка на фрагмент страницы
+                            некоторого
+                            сайта</a></li>
+                    <li class="link__menu__item"><a href="#top">Ссылка на фрагмент текущей страницы</a></li>
+                    <li class="link__menu__item"><a
+                            href="https://en.wikipedia.org/w/index.php?go=Go&search=bcvcvbbvccvb&title=Special%3ASearch&ns0=1">Ссылка
+                            с двумя параметрами в URL</a></li>
+                    <li class="link__menu__item">
+                        Список ссылок основной навигации сайта с подписями title
+                        <ul>
+                            <li><a href="#head1" title="Нумерованный список гиперссылок">Нумерованный список
+                                    гиперссылок</a>
+                            </li>
+                            <li><a href="#head2" title="Форма">Форма</a></li>
+                        </ul>
+                    </li>
+                    <li class="link__menu__item"><a>Ссылка без href</a></li>
+                    <li class="link__menu__item"><a href="">Ссылка с пустым href</a></li>
+                    <li class="link__menu__item"><a href="https://vk.com/nikolinn" rel="nofollow">Ссылка, по которой
+                            запрещен переход поисковикам</a></li>
+                    <li class="link__menu__item"><a href="https://vk.com/nikolinn" rel="nofollow">
+                            <!--noindex-->Ссылка, запрещенная для индексации поисковиками
+                            <!--/noindex-->
+                        </a></li>
+                    <li class="link__menu__item">
+                        <p>Контекстная <a href="https://vk.com/nikolinn">ссылка</a> в тексте абзаца</p>
+                    </li>
+                    <li class="link__menu__item">Ссылка-изображение<br />
+                        <a href="https://vk.com/nikolinn"><img
+                                src="https://sun9-35.userapi.com/impg/wSoFfv5c3xBSbw_RbjFlcIA2t4crg8DHNyQBxg/2s7qkk8ZabU.jpg?size=1057x1620&quality=95&sign=48f4265bbcfd2e86371f03c2487c6eed&type=album"
+                                width="300" height="400" alt="Описание картинки"></a>
+                    </li>
+                    <li class="link__menu__item">
+                        Ссылки из прямоугольных и круглых областей картинки<br />
+                        <img src="https://sun9-50.userapi.com/impg/rAQBEOk77SlshO8jBaZmKjT_yd01tmyK1zZj5Q/65nwGTTPKu4.jpg?size=1915x1620&quality=95&sign=dc22d0aec0acff0c5a116ffa88792689&type=album"
+                            width="310" height="242" alt="Описание картинки" usemap="#mymap">
+                        <map name="mymap">
+                            <area shape="rect" coords="40,25,90,150"
+                                href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Philly_Thinker.JPG/330px-Philly_Thinker.JPG"
+                                alt="Прямоугольная область">
+                            <area shape="circle" coords="100,210,25"
+                                href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Almeida_J%C3%BAnior_-_Mo%C3%A7a_com_Livro.jpg/330px-Almeida_J%C3%BAnior_-_Mo%C3%A7a_com_Livro.jpg"
+                                alt="Круглая область">
+                        </map>
+                    </li>
+                    <li class="link__menu__item"><a href="page">Относительная ссылка на страницу в текущем
+                            каталоге</a></li>
+                    <li class="link__menu__item"><a href="./about/page">Относительная ссылка на страницу в каталоге
+                            about</a></li>
+                    <li class="link__menu__item"><a href="../page">Относительная ссылка на страницу в каталоге
+                            уровнем выше
+                            текущего</a></li>
+                    <li class="link__menu__item"><a href="../../page">Относительная ссылка на страницу в каталоге
+                            двумя
+                            уровнями выше текущего</a></li>
+                    <li class="link__menu__item"><a href="/">Сокращенная ссылка на главную</a></li>
+                    <li class="link__menu__item"><a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
+                </ol>
+            </section>
+        </div>
+        <div class="col-md-9 order-2 px-sm-3">
+            <div id="table">
+                <table>
+
+                    <caption>
+                        <h2>Таблица</h2>
+                    </caption>
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">Ячейка 11</td>
+                        <td>Ячейка 11</td>
+                    </tr>
+
+                    <tr class="tab">
+                        <td colspan="2">Ячейка 22 </td>
+                        <td>Ячейка 22 </td>
+                    </tr>
+
+                    <tr>
+                        <td>Ячейка 33</td>
+                        <td>Ячейка 33</td>
+                        <td>Ячейка 33</td>
+                    </tr>
+
+                    <tr class="tab">
+                        <td>Ячейка 44</td>
+                        <td colspan="2">Ячейка 44</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ячейка 55</td>
+                        <td>Ячейка 55</td>
+                        <td>Ячейка 55</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-9 order-2 px-sm-3">
+            <div id="form">
+                <h2 id="head2">Форма</h2>
+                <form action="https://www.example.com" method="POST" class="form__btn">
+                    <label>
+                        Имя:<br />
+                        <input name="field-name-1" value="Введите имя" type="name" />
+                    </label><br />
+
+                    <label>
+                        Email:<br />
+                        <input name="field-email" value=" " type="email" />
+                    </label><br />
+                    <label>
+                        Дата рождения:<br />
+                        <input name="field-date" value="2004-04-16" type="date" />
+                    </label><br />
+                    Количество конечностей:<br />
+                    <label>
+                        <input type="radio" name="radio-group-1" value="1" />
+                        1
+                    </label>
+                    <label>
+                        <input type="radio" name="radio-group-1" value="2" />
+                        2
+                    </label>
+                    <label>
+                        <input type="radio" name="radio-group-1" value="3" />
+                        3
+                    </label>
+                    <label>
+                        <input type="radio" checked="checked" name="radio-group-1" value="4" />
+                        4
+                    </label>
+                    <label>
+                        Сверхспособности:<br />
+                        <select name="p" multiple="multiple">
+                            <option value="levitation" selected="selected">Левитация</option>
+                            <option value="passingthroughwalls">Прохождение сквозь стены</option>
+                            <option value="immortality">Бессмертие</option>
+                        </select>
+                    </label><br />
+                    <label>
+                        Биография:<br />
+                        <textarea name="bio"></textarea>
+                    </label><br />
+                    С контрактом ознакомлен(а):<br />
+                    <label>
+                        <input type="checkbox" checked="checked" name="check-1" />
+                    </label><br />
+                    <input type="submit" value="Отправить" />
+                </form>
+                <form>
+            <input type="text" name="cost" placeholder="Введите стоимость">
+            <input type="text" name="kol" placeholder="Введите количество">
+            <button id="button1" onclick="return calc();">Расчитать стоимость</button>
+        </form>
+        <div id="result"></div>
+    
+        <script src="main.js" defer></script>
+        </div>
+        <footer class="footer" id="footer">
+            <div class="footer__inner">
+                
+        </div>
+        <footer>(c)Maksimenko Viktoria 2022</footer>
+</body>
+
+</html>
